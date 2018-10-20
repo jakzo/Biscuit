@@ -1,0 +1,120 @@
+.chain {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.chain_bank {
+    float: left;
+    width: 30%;
+    background-color: #333;
+    height: 100%;
+    border-right: 2px solid #000;
+    max-width: 400px;
+}
+.chain_presets {
+    background-color: #069;
+    height: 50px;
+}
+.chain_presets div {
+    padding: 4px;
+}
+.chain_presets span {
+    width: calc(100% - 14px);
+}
+.chain_presets button {
+    float: right;
+    width: 50px;
+    height: 22px;
+}
+.chain_presets input {
+    width: calc(100% - 54px);
+    cursor: auto;
+    border: 1px solid #999;
+    height: 22px;
+}
+.chain_presets input:focus {
+    box-shadow: #0af 0px 0px 8px;
+}
+.chain_scroll {
+    overflow-y: auto;
+    height: calc(100% - 50px);
+    overflow-x: hidden;
+}
+.chain_bank h2 {
+    color: #09f;
+    padding: 2px 4px;
+    margin: 2px;
+}
+.chain_bank ul {
+    margin: 4px;
+    list-style-type: none;
+    padding: 0;
+}
+.chain_bank li {
+    color: #fff;
+}
+
+.chain_container {
+    height: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+}
+.chain_zoom {
+    height: 1000;
+    width: 1000;
+    position: relative;
+    cursor: grab;
+    cursor: -webkit-grab;
+    background-image: linear-gradient(#eee, #fff);
+}
+.chain_container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: grab;
+    cursor: -webkit-grab;
+    width: 1000px;
+    height: 1000px;
+}
+.chain_element {
+    position: absolute;
+    z-index: 1000;
+    cursor: inherit;
+    margin-bottom: 16px;
+}
+.chain_element h3 {
+    padding: 0;
+    margin: 0;
+}
+.chain_click * {
+    cursor: pointer;
+    box-shadow: inset 0 0 32px #fff !important;
+}
+.chain_effectbox {
+    background-color: #999;
+    color: #333;
+    box-shadow: inset 0px 0px 32px #333;
+    padding: 8px;
+    border-radius: 8px;
+}
+.chain_port {
+    width: 12px;
+    height: 16px;
+    position: absolute;
+    bottom: -16px;
+}
+.chain_audioport {
+    background-color: #339;
+}
+.chain_noteport {
+    background-color: #939;
+}
+.chain_midiport {
+    background-color: #393;
+}
+.chain_outputport {
+    box-shadow: inset 0px 0px 4px #000;
+}
+.chain_invalid {
+    outline: solid 2px #f00;
+}

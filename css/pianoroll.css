@@ -1,0 +1,187 @@
+.editor {
+    position: relative;
+    height: calc(100% - 34px);
+    bottom: 0;
+    /* overflow: hidden; */
+}
+.overflow {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+    box-shadow: 0 0 12px 0 #000;
+    z-index: 1;
+}
+.controls {
+    height: 17px;
+    background-color: #999;
+    color: #fff;
+    overflow: hidden;
+    font-size: 14px;
+    padding-top: 1px;
+}
+
+.snap_control {
+    
+}
+.zoom {
+    margin-left: 8px;
+    color: #fff;
+    background-color: #666;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 4px;
+    font-size: 14px;
+}
+.zoom:hover {
+    color: #000;
+    background-color: #ccc;
+}
+.ruler {
+    height: 15px;
+    background-color: #ddd;
+    border-bottom: 1px #666 solid;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.ruler_beatlines {
+    position: relative;
+    height: 100%;
+    margin-left: 60px;
+}
+.bar_ruler, .beat_ruler {
+    width: 0;
+    position: absolute;
+    bottom: 0;
+}
+.bar_ruler {
+    top: 4px;
+    border-left: 1px solid #666;
+}
+.beat_ruler {
+    top: 8px;
+    border-left: 1px solid #ccc;
+}
+.bar_number {
+    position: absolute;
+    top: 0;
+    color: #999;
+    font-size: 12px;
+    margin-left: 2px;
+}
+.scroll_container {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    right: 0;
+    bottom: 0;
+}
+.draw_area {
+    position: relative;
+    min-width: 100%;
+}
+.bar_line, .beat_line {
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.bar_line { border-left: 1px solid #fff; }
+.beat_line { border-left: 1px solid #999; }
+.line_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.loop_end {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 80px 0 80px -80px #ccc inset;
+    z-index: 3;
+}
+.loop_resize {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #000;
+    cursor: ew-resize;
+}
+.loop_resize:hover {
+    box-shadow: 0 0 4px 1px #06c;
+}
+.note_bar {
+    background-color: #0af;
+    border: 1px solid #06c;
+    border-radius: 3px;
+    height: 9px;
+    cursor: -webkit-grab;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1px;
+}
+.note_bar:hover {
+    background-color: #08d;
+}
+.note_selected {
+    background-color: #bcd;
+}
+.note_selected:hover {
+    background-color: #cde;
+}
+.piano_roll {
+    width: 61px;
+    position: absolute;
+    margin-left: -1px;
+}
+.key {
+    border: 1px solid #333;
+}
+.white_both, .white_top, .white_bottom, .white {
+    background-color: #999;
+    background-image: linear-gradient(#ccc, #999);
+}
+.pianoroll_keydown {
+    background-color: #333;
+    background-image: linear-gradient(#ccc, #fff) !important;
+}
+.white_both:hover, .white_top:hover, .white_bottom:hover, .white:hover {
+    background-color: #ccc;
+    background-image: linear-gradient(#ccc, #fff);
+}
+.white_both { height: 22px; }
+.white_top { height: 16px; }
+.white_bottom { height: 16px; }
+.white { height: 10px; }
+.black {
+    background-color: #333;
+    height: 10px;
+    width: 40px;
+    position: absolute;
+    background-image: linear-gradient(#333, #666);
+}
+.black:hover {
+    background-color: #666;
+    background-image: linear-gradient(#ccc, #999);
+}
+.label {
+    color: #000;
+    float: right;
+    font-size: 12px;
+}
+.black_line, .white_line {
+    height: 11px;
+    border-bottom: 1px solid #999;
+}
+.black_line { background-color: #333; }
+.white_line { background-color: #666; }

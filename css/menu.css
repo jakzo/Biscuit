@@ -1,0 +1,26 @@
+.menu_container {
+    position: absolute;
+    z-index: 1000;
+}
+.menu {
+    position: absolute;
+    background-color: #ccc;
+    border: 1px solid #666;
+    min-width: 120px;
+    font-size: 14px;
+    box-shadow: 0 0 16px #000;
+}
+.menu_item {
+    white-space: nowrap;
+}
+.menu_item:hover {
+    background-image: linear-gradient(#444, #222);
+    color: #fff;
+}
+.menu_toggle {
+    display: inline-block;
+    width: 16px;
+}
+.menu_submenu {
+    float: right;
+}

@@ -1,0 +1,41 @@
+.resource_info {
+    float: left;
+    width: 200px;
+    background-image: radial-gradient(200px at 50% 0px, #fff, #bbc);
+    height: 100%;
+    border-right: 2px #aaa solid;
+    overflow: auto;
+}
+
+.resource_info {}
+
+.resource_list {
+    height: 100%;
+    width: 100%;
+}
+.resource_list ul {
+    padding: 0;
+    margin: 0;
+    -webkit-column-width: 200px;
+    -webkit-column-gap: 4px;
+    height: 100%;
+    font-size: 14px;
+    overflow: auto;
+}
+.resource_list li {
+    list-style: none;
+    padding: 2px 4px;
+    margin: 2px 4px;
+    white-space: nowrap;
+    border-radius: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.resource_list li:hover {
+    background-color: #999;
+}
+.resource_icon {
+    font-size: 10px;
+    vertical-align: middle;
+    color: #999;
+}
