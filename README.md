@@ -5,7 +5,7 @@ Biscuit
 
 Digital audio workstation using HTML5
 
-[Live Demo](http://jakzo.github.io/Biscuit)
+[Live Demo](http://jakzo.github.io/biscuit)
 (Designed for Google Chrome on desktop at this stage but may work in other
 browsers...)
 
