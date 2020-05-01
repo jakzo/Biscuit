@@ -51,7 +51,7 @@ var Demo = {
     },
     onMultitrackLoad: function() {
         if(Demo.done) {
-            multitrack.openSaveData(demoFile);
+            multitrack.openSaveData(Demo.file);
             Demo.setLoadText(false);
         }
     }

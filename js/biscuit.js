@@ -509,7 +509,17 @@ Biscuit.AudioContext = window.AudioContext || window.webkitAudioContext;
 if(!Biscuit.AudioContext) {
     alert("Sorry, the web audio API is not supported by this browser!");
 }
-else Biscuit.context = new Biscuit.AudioContext();
+else {
+    function createAudioContext() {
+        Biscuit.context = new Biscuit.AudioContext();
+        document.removeEventListener("keydown", createAudioContext);
+        document.removeEventListener("mousedown", createAudioContext);
+
+        init();
+    }
+    document.addEventListener("keydown", createAudioContext);
+    document.addEventListener("mousedown", createAudioContext);
+}
 
 /*
 //Biscuit SVG Logo
